@@ -1,3 +1,5 @@
+/* The CSS for student.html / student-profile.html */
+/* student.html ---------------------------------- */
 /* header */
 .student-profile-img {
     box-sizing: border-box;
@@ -64,7 +66,7 @@
     border-left: 0.3em solid transparent;
 }
 
-/* /////////////////////**********************************************************______________________________ */
+/* /////////////////////______________________________ */
 /* Class schedule */
 .student-class-schedule-table{
     width: 100%;
@@ -75,4 +77,19 @@
     margin: 12px;
     width: max-content;
     background: #e9ecef;
+}
+
+/* <<<<<<<<<>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>><???????///////////------------------------------------------ */
+/* student-profile.html */
+.student-profile-profile-pic-wrapper{
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: fit-content;
+    height: fit-content;
+}
+.student-profile-detail-table-title{
+    color: gray;
 }
