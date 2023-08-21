@@ -1,0 +1,78 @@
+/* header */
+.student-profile-img {
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+}
+
+.student-profile-img :hover {
+    filter: brightness(0.7);
+}
+
+.student-profile-pic-wrapper {
+    position: relative;
+}
+
+.student-profile-edit-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: min-content;
+    width: min-content;
+    text-align: center;
+    opacity: 0;
+    border: 1px solid #0275d8;
+    background-color: #0275d8;
+    border-radius: 10px;
+    color: #fff !important;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.student-profile-pic-wrapper:hover .student-profile-edit-btn {
+    opacity: 1;
+}
+
+.student-profile-more-detail-btn {
+    color: #000;
+    text-decoration: none !important;
+    text-align: center;
+}
+
+.student-profile-more-detail-text {
+    background-color: #cce3f7;
+    border-radius: 9px;
+}
+
+.student-profile-more-detail-text:hover {
+    color: #fff;
+    background-color: #0275d8;
+}
+
+.student-profile-more-detail-btn .student-profile-more-detail-text::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+
+/* /////////////////////**********************************************************______________________________ */
+/* Class schedule */
+.student-class-schedule-table{
+    width: 100%;
+    text-align: center;
+}
+.student-class-schedule-table th{
+    padding: 2px;
+    margin: 12px;
+    width: max-content;
+    background: #e9ecef;
+}
