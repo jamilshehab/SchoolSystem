@@ -1,11 +1,12 @@
 /*  */
 /* parent-attendance */
-.parent-attendance-table {
+.parent-custom-tables {
     width: 100%;
     text-align: center;
+    max-height: 100vh;
 }
 
-.parent-attendance-table thead {
+.parent-custom-tables thead {
     padding: 2px;
     margin: 12px;
     width: max-content;
@@ -26,4 +27,8 @@
     background-color: red;
     border-radius: 50%;
     display: inline-block;
+}
+
+.bg-custom-light-gray{
+    background-color: #bfc7cf85;
 }
