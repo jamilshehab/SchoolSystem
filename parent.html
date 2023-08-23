@@ -49,6 +49,7 @@
         </ul>
     </nav>
     <div id="layoutSidenav">
+        <!-- side nav -->
         <div id="layoutSidenav_nav">
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                 <div class="sb-sidenav-menu">
@@ -58,32 +59,19 @@
                             Dashboard
                         </a>
 
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages"
-                            aria-expanded="false" aria-controls="collapsePages">
-                            <div class="fa fa-users m-3"><i class="fas fa-user-friends"></i></div>
+                        <a id="teachersButton" class="nav-link" href="#">
+                            <div class="fa-solid fa fa-users m-3">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
                             Teachers
-                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
-                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo"
-                            data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="login.html">All Teachers</a>
-                                <a class="nav-link" href="register.html">Teacher Details</a>
-                            </nav>
-                        </div>
 
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                            data-bs-target="#collapsePaging" aria-expanded="false" aria-controls="collapsePages">
-                            <div class="fas fa-book m-3"><i class="fas fa-book"></i></div>
+                        <a class="nav-link" href="index.html">
+                            <div class="fa-solid fas fa-book m-3">
+                                <i class="fas fa-book"></i>
+                            </div>
                             Classes
-                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
-                        <div class="collapse" id="collapsePaging" aria-labelledby="headingTwo"
-                            data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="login.html">All Classes</a>
-                            </nav>
-                        </div>
 
                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseExams"
                             aria-expanded="false" aria-controls="collapsePages">
@@ -99,20 +87,14 @@
                             </nav>
                         </div>
 
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                            data-bs-target="#collapseGrades" aria-expanded="false" aria-controls="collapsePages">
-                            <div class="fas fa-graduation-cap m-3"><i class="fas fa-graduation-cap"></i></div>
+                        <a class="nav-link" href="index.html">
+                            <div class="fa-solid fas fa-graduation-cap m-3">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
                             Grades
-                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
-                        <div class="collapse" id="collapseGrades" aria-labelledby="headingTwo"
-                            data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="login.html">View Grades</a>
-                            </nav>
-                        </div>
 
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                        <!-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
                             data-bs-target="#collapseAttendance" aria-expanded="false" aria-controls="collapsePages">
                             <div class="fas fa-calendar-check m-3"><i class="fas fa-calendar-check"></i></div>
                             Attendance
@@ -123,7 +105,7 @@
                             <nav class="sb-sidenav-menu-nested nav">
                                 <a class="nav-link" href="login.html">View Attendance</a>
                             </nav>
-                        </div>
+                        </div> -->
 
                         <a class="nav-link" href="index.html">
                             <div class="fa-solid fa-money-bill m-3">
@@ -141,81 +123,103 @@
 
             </nav>
         </div>
+        <!-- end side nav -->
+
+        <!-- right side content -->
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid px-4">
-                    <h1 class="mt-4">Dashboard</h1>
-                    <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item active">Dashboard / Parent</li>
-                    </ol>
+
+                    <!-- page title -->
+                    <section id="pageTitleSection">
+                        <h1 class="mt-4">Dashboard</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active">Dashboard / Parent</li>
+                        </ol>
+                    </section>
+                    <!-- end page title -->
 
                     <!-- student Header -->
-                    <div class="row my-3">
-                        <div class="col-md-3 col-6">
-                            <!-- profile img -->
-                            <div class="w-100 h-100 d-flex justify-content-center">
-                                <div class="student-profile-pic-wrapper">
-                                    <div class="student-profile-img p-2">
-                                        <img class="w-100 h-100"
-                                            src="assets/custem-img/gray-user-profile-icon-png-fP8Q1P.png"
-                                            alt="Student profile Image">
+                    <section id="studentHeader">
+                        <div class="row my-3">
+                            <div class="col-md-3 col-6">
+                                <!-- profile img -->
+                                <div class="w-100 h-100 d-flex justify-content-center">
+                                    <div class="student-profile-pic-wrapper">
+                                        <div class="student-profile-img p-2">
+                                            <img class="w-100 h-100"
+                                                src="assets/custem-img/gray-user-profile-icon-png-fP8Q1P.png"
+                                                alt="Student profile Image">
+                                        </div>
+                                        <a class="student-profile-edit-btn p-2" href="#">
+                                            Edit
+                                        </a>
                                     </div>
-                                    <a class="student-profile-edit-btn p-2" href="#">
-                                        Edit
-                                    </a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-7 col-6">
-                            <!-- name section -->
-                            <div class="w-100 h-100 d-flex align-items-center justify-content-start">
-                                <div class="student-profile-name">
-                                    <h3>Mohammad Jamil</h3>
-                                    <h5>Grade <span>5</span> <span>A</span></h5>
-                                    <p>12030553</p>
+                            <div class="col-md-7 col-6">
+                                <!-- name section -->
+                                <div class="w-100 h-100 d-flex align-items-center justify-content-start">
+                                    <div class="student-profile-name">
+                                        <h3>Mohammad Jamil</h3>
+                                        <h5>Grade <span>5</span> <span>A</span></h5>
+                                        <p>12030553</p>
 
-                                    <!-- the more detail btn will display none on md screen under this div -->
-                                    <a class="d-md-none d-inline student-profile-more-detail-btn" href="">
+                                        <!-- the more detail btn will display none on md screen under this div -->
+                                        <a class="d-md-none d-inline student-profile-more-detail-btn" href="">
+                                            <p class="student-profile-more-detail-text p-2">more detail</p>
+                                        </a>
+                                        <div class="dropdown d-md-none d-inline">
+                                            <a class="student-profile-more-detail-btn align-self-center"
+                                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+                                                href="studet-profile.html">
+                                                <p class="student-profile-more-detail-text p-2 dropdown-toggle">
+                                                    Mohammad Jamil</p>
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">Jamil Jamil</a></li>
+                                                <li><a class="dropdown-item" href="#">Children 3</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 d-md-inline d-none">
+                                <!-- ^ the more detail btn will display none on small screen under this div -->
+                                <!-- more detail btn -->
+                                <div class="h-100 w-100 d-flex flex-column justify-content-center">
+                                    <a class="student-profile-more-detail-btn align-self-center"
+                                        href="student-profile.html">
                                         <p class="student-profile-more-detail-text p-2">more detail</p>
                                     </a>
+                                    <div class="dropdown">
+                                        <a class="student-profile-more-detail-btn align-self-center"
+                                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+                                            href="studet-profile.html">
+                                            <p class="student-profile-more-detail-text p-2 dropdown-toggle">
+                                                Mohammad Jamil</p>
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">Jamil Jamil</a></li>
+                                            <li><a class="dropdown-item" href="#">Children 3</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 d-md-inline d-none">
-                            <!-- ^ the more detail btn will display none on small screen under this div -->
-                            <!-- more detail btn -->
-                            <div class="h-100 w-100 d-flex flex-column justify-content-center">
-                                <a class="student-profile-more-detail-btn align-self-center"
-                                    href="student-profile.html">
-                                    <p class="student-profile-more-detail-text p-2">more detail</p>
-                                </a>
-                                <div class="dropdown">
-                                    <a class="student-profile-more-detail-btn align-self-center"
-                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
-                                        href="studet-profile.html">
-                                        <p class="student-profile-more-detail-text p-2 dropdown-toggle">
-                                            Mohammad Jamil</p>
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="#">Jamil Jamil</a></li>
-                                        <li><a class="dropdown-item" href="#">Children 3</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
+                        <hr>
+                    </section>
                     <!-- end student Header -->
 
                     <!-- Attendance -->
-                    <section class="parent-attendance-section mb-4">
+                    <section id="attendanceView" class="parent-attendance-section mb-4">
                         <div class="card">
                             <div class="card-header">
                                 <i class="fa-solid fa-calendar-days"></i>
                                 Attendance
                             </div>
                             <div class="card-body">
-                                <table class="parent-attendance-table">
+                                <table class="parent-custom-tables">
                                     <thead>
                                         <th class="p-1"></th>
                                         <th class="p-1">Mon 1/1</th>
@@ -265,9 +269,55 @@
                     </section>
                     <!-- end Attendance -->
 
+                    <!-- payment -->
+                    <section id="payment" class="mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fa-solid fa-money-bill"></i>
+                                Payment Information
+                            </div>
+                            <div class="card-body">
+                                <table class="parent-custom-tables text-center w-100">
+                                    <thead>
+                                        <th class="p-1">Amount</th>
+                                        <th class="p-1">Due Date</th>
+                                        <th class="p-1">Payment Date</th>
+                                        <th class="p-1">Status</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="bg-custom-light-gray">
+                                            <td>100$</td>
+                                            <td>10/10/2023</td>
+                                            <td>9/10/2023</td>
+                                            <td><span class="green-dot"></span> Paid</td>
+                                        </tr>
+                                        <tr>
+                                            <td>100$</td>
+                                            <td>10/10/2023</td>
+                                            <td>-</td>
+                                            <td><span class="red-dot"></span> Unpaid</td>
+                                        </tr>
+                                        <tr class="bg-custom-light-gray">
+                                            <td>100$</td>
+                                            <td>10/10/2023</td>
+                                            <td>-</td>
+                                            <td><span class="red-dot"></span> Unpaid</td>
+                                        </tr>
+                                        <tr>
+                                            <td>100$</td>
+                                            <td>10/10/2023</td>
+                                            <td>-</td>
+                                            <td><span class="red-dot"></span> Unpaid</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end payment -->
 
                     <!-- classes schedule section -->
-                    <section class="student-class-schedule-section">
+                    <section id="classesSchedule" class="student-class-schedule-section">
                         <div class="row">
                             <div class="col-12">
                                 <div class="card mb-4">
@@ -290,13 +340,13 @@
                                             <tbody>
                                                 <tr>
                                                     <td class="bg-secondary text-light p-1"><b>8:00 - 9:00 AM</b></td>
-                                                    <td class="bg=light p-1 text-center">Arabic</td>
-                                                    <td class="bg=light p-1 text-center">Arabic</td>
-                                                    <td class="bg=light p-1 text-center">Arabic</td>
-                                                    <td class="bg=light p-1 text-center">Arabic</td>
-                                                    <td class="bg=light p-1 text-center">-</td>
-                                                    <td class="bg=light p-1 text-center">Arabic</td>
-                                                    <td class="bg=light p-1 text-center">-</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">Arabic</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">Arabic</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">Arabic</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">Arabic</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">-</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">Arabic</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">-</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="bg-secondary text-light p-1"><b>8:00 - 9:00 AM</b></td>
@@ -310,13 +360,13 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="bg-secondary text-light p-1"><b>8:00 - 9:00 AM</b></td>
-                                                    <td class="bg=light p-1 text-center">Arabic</td>
-                                                    <td class="bg=light p-1 text-center">Arabic</td>
-                                                    <td class="bg=light p-1 text-center">Arabic</td>
-                                                    <td class="bg=light p-1 text-center">Arabic</td>
-                                                    <td class="bg=light p-1 text-center">-</td>
-                                                    <td class="bg=light p-1 text-center">Arabic</td>
-                                                    <td class="bg=light p-1 text-center">-</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">Arabic</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">Arabic</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">Arabic</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">Arabic</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">-</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">Arabic</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">-</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="bg-secondary text-light p-1"><b>8:00 - 9:00 AM</b></td>
@@ -330,13 +380,13 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="bg-secondary text-light p-1"><b>8:00 - 9:00 AM</b></td>
-                                                    <td class="bg=light p-1 text-center">Arabic</td>
-                                                    <td class="bg=light p-1 text-center">Arabic</td>
-                                                    <td class="bg=light p-1 text-center">Arabic</td>
-                                                    <td class="bg=light p-1 text-center">Arabic</td>
-                                                    <td class="bg=light p-1 text-center">-</td>
-                                                    <td class="bg=light p-1 text-center">Arabic</td>
-                                                    <td class="bg=light p-1 text-center">-</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">Arabic</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">Arabic</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">Arabic</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">Arabic</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">-</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">Arabic</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">-</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="bg-secondary text-light p-1"><b>8:00 - 9:00 AM</b></td>
@@ -350,13 +400,13 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="bg-secondary text-light p-1"><b>8:00 - 9:00 AM</b></td>
-                                                    <td class="bg=light p-1 text-center">-</td>
-                                                    <td class="bg=light p-1 text-center">-</td>
-                                                    <td class="bg=light p-1 text-center">-</td>
-                                                    <td class="bg=light p-1 text-center">-</td>
-                                                    <td class="bg=light p-1 text-center">-</td>
-                                                    <td class="bg=light p-1 text-center">-</td>
-                                                    <td class="bg=light p-1 text-center">-</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">-</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">-</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">-</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">-</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">-</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">-</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">-</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="bg-secondary text-light p-1"><b>8:00 - 9:00 AM</b></td>
@@ -370,13 +420,13 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="bg-secondary text-light p-1"><b>8:00 - 9:00 AM</b></td>
-                                                    <td class="bg=light p-1 text-center">Arabic</td>
-                                                    <td class="bg=light p-1 text-center">Arabic</td>
-                                                    <td class="bg=light p-1 text-center">Arabic</td>
-                                                    <td class="bg=light p-1 text-center">Arabic</td>
-                                                    <td class="bg=light p-1 text-center">-</td>
-                                                    <td class="bg=light p-1 text-center">Arabic</td>
-                                                    <td class="bg=light p-1 text-center">-</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">Arabic</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">Arabic</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">Arabic</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">Arabic</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">-</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">Arabic</td>
+                                                    <td class="bg-custom-light-gray p-1 text-center">-</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -396,9 +446,10 @@
                     </section>
                     <!-- END classes schedule section -->
 
+                    <!-- Exam -->
                     <!-- Exam grades -->
-                    <section>
-                        <div class="card mb-4">
+                    <section id="examGrades" class="mb-4">
+                        <div class="card">
                             <div class="card-header">
                                 <i class="fa-solid fa-graduation-cap"></i>
                                 Exam Grade
@@ -887,9 +938,110 @@
                             </div>
                         </div>
                     </section>
+                    <!-- end Exam grades -->
+                    <!-- Exam Schedule -->
+                    <section id="examSchedule" class="mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                Exam Schedule
+                            </div>
+                            <div class="card-body">
+                                <table class="parent-custom-tables">
+                                    <thead>
+                                        <th class="p-1">Subject</th>
+                                        <th class="p-1">Exam Title</th>
+                                        <th class="p-1">Time</th>
+                                        <th class="p-1">Date</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="bg-custom-light-gray">
+                                            <td class="p-1">English</td>
+                                            <td class="p-1">Grammer</td>
+                                            <td class="p-1">10:00</td>
+                                            <td class="p-1">22/8/2023</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-1">English</td>
+                                            <td class="p-1">Grammer</td>
+                                            <td class="p-1">10:00</td>
+                                            <td class="p-1">22/8/2023</td>
+                                        </tr>
+                                        <tr class="bg-custom-light-gray">
+                                            <td class="p-1">English</td>
+                                            <td class="p-1">Grammer</td>
+                                            <td class="p-1">10:00</td>
+                                            <td class="p-1">22/8/2023</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-1">English</td>
+                                            <td class="p-1">Grammer</td>
+                                            <td class="p-1">10:00</td>
+                                            <td class="p-1">22/8/2023</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End Exam Schedule -->
+                    <!-- END Exam -->
+
+                    <!-- Teachers -->
+                    <section id="teachers" class=" mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fas fa-user-friends"></i>
+                                Teachers
+                            </div>
+                            <div class="card-body">
+                                <table class="parent-custom-tables w-100 text-center">
+                                    <thead class="">
+                                        <th class="p-1">Subject</th>
+                                        <th class="p-1">Teacher Name</th>
+                                        <th class="p-1" colspan="2">Meeting Time</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="bg-secondary text-light p-1">Arabic</td>
+                                            <td class="bg-secondary text-light p-1">Mostafa</td>
+                                            <td class="bg-custom-light-gray p-1">Mon / Tue</td>
+                                            <td class="bg-custom-light-gray p-1">12:00 - 12:30</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg-secondary text-light p-1">English</td>
+                                            <td class="bg-secondary text-light p-1">Hiba</td>
+                                            <td class="p-1">Th</td>
+                                            <td class="p-1">1:15 - 1:45</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg-secondary text-light p-1">Math</td>
+                                            <td class="bg-secondary text-light p-1">Leen</td>
+                                            <td class="bg-custom-light-gray p-1">Mon</td>
+                                            <td class="bg-custom-light-gray p-1">12:00 - 12:35</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg-secondary text-light p-1">Physics</td>
+                                            <td class="bg-secondary text-light p-1">Jad</td>
+                                            <td class="p-1">Wed / Sat</td>
+                                            <td class="p-1">9:30 - 10:15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg-secondary text-light p-1">Chemistry</td>
+                                            <td class="bg-secondary text-light p-1">Jad</td>
+                                            <td class="bg-custom-light-gray p-1">Mon</td>
+                                            <td class="bg-custom-light-gray p-1">9:15 - 10:00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end Teachers -->
                 </div>
             </main>
 
+            <!-- footer -->
             <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid px-4">
                     <div class="d-flex align-items-center justify-content-between small">
@@ -902,8 +1054,17 @@
                     </div>
                 </div>
             </footer>
+            <!-- end footer -->
         </div>
+        <!-- end right side content -->
+
     </div>
+
+    <!-- scripts src -->
+    <!-- custom js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/custom/parent.js"></script>
+    <!--  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
     </script>
     <script src="js/scripts.js"></script>
