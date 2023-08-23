@@ -17,10 +17,25 @@ $("#classesButton").click(function () {
     $("#classesSchedule").show();
 })
 
-// Exam Grades
-$("#examGrades").click(function () {
+// Exam Grades Button
+$("#examGradesButton").click(function () {
     $("#pageTitleSection h1").text("Exam Geade");
     $("#pageTitleSection ol li").text("Dashboard / Parent / Exam");
     $("#studentHeader, #attendanceView, #payment, #teachers, #examSchedule, #classesSchedule").hide();
     $("#examGrades").show();
+});
+// Exam schedule Button
+$("#examScheduleButton").click(function () {
+    $("#pageTitleSection h1").text("Exam Geade");
+    $("#pageTitleSection ol li").text("Dashboard / Parent / Exam");
+    $("#studentHeader, #attendanceView, #payment, #teachers, #examGrades, #classesSchedule").hide();
+    $("#examSchedule").show();
+});
+
+// payment Button
+$("#paymentButton").click(function () {
+    $("#pageTitleSection h1").text("Exam Geade");
+    $("#pageTitleSection ol li").text("Dashboard / Parent / Exam");
+    $("#studentHeader, #attendanceView, #examGrades, #teachers, #examSchedule, #classesSchedule").hide();
+    $("#payment").show();
 });
