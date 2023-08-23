@@ -2,3 +2,7 @@
 we can use this table in teacher.html to let teacher set the Attendance
 https://codepen.io/b00stup/pen/jLWPgd 
 --//
+
+//--
+jquery added in js folder
+--//
