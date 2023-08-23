@@ -39,3 +39,14 @@ $("#paymentButton").click(function () {
     $("#studentHeader, #attendanceView, #examGrades, #teachers, #examSchedule, #classesSchedule").hide();
     $("#payment").show();
 });
+
+// for the checkbox button ( pay online )
+$(document).ready(function () {
+    $("#onlinePayCheckbox").change(function () {
+        if ($(this).prop("checked")) {
+            $("#paymentOnlineForm .card").removeClass("bg-custom-light-gray");
+        } else {
+            $("#paymentOnlineForm .card").addClass("bg-custom-light-gray");
+        }
+    });
+});
