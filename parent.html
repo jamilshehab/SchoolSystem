@@ -49,12 +49,13 @@
         </ul>
     </nav>
     <div id="layoutSidenav">
+
         <!-- side nav -->
         <div id="layoutSidenav_nav">
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                 <div class="sb-sidenav-menu">
                     <div class="nav">
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link" href="parent.html">
                             <div class="sb-nav-link-icon m-3"><i class="fas fa-tachometer-alt"></i></div>
                             Dashboard
                         </a>
@@ -66,7 +67,7 @@
                             Teachers
                         </a>
 
-                        <a class="nav-link" href="index.html">
+                        <a id="classesButton" class="nav-link" href="#">
                             <div class="fa-solid fas fa-book m-3">
                                 <i class="fas fa-book"></i>
                             </div>
@@ -82,17 +83,17 @@
                         <div class="collapse" id="collapseExams" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="login.html">Exam Grades</a>
-                                <a class="nav-link" href="password.html">Exam Scheduele</a>
+                                <a id="examGradesButton" class="nav-link" href="#">Exam Grades</a>
+                                <a id="examScheduleButton" class="nav-link" href="#">Exam Schedule</a>
                             </nav>
                         </div>
 
-                        <a class="nav-link" href="index.html">
+                        <!-- <a id="grades" class="nav-link" href="#">
                             <div class="fa-solid fas fa-graduation-cap m-3">
                                 <i class="fas fa-graduation-cap"></i>
                             </div>
                             Grades
-                        </a>
+                        </a> -->
 
                         <!-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
                             data-bs-target="#collapseAttendance" aria-expanded="false" aria-controls="collapsePages">
@@ -107,14 +108,14 @@
                             </nav>
                         </div> -->
 
-                        <a class="nav-link" href="index.html">
+                        <a id="paymentButton" class="nav-link" href="#">
                             <div class="fa-solid fa-money-bill m-3">
                                 <i class="fa-solid fa-money-bill"></i>
                             </div>
                             Payment
                         </a>
 
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link" href=".html">
                             <div class="fas fa-key m-3"><i class="fas fa-key"></i></div>
                             Account
                         </a>
@@ -315,6 +316,117 @@
                         </div>
                     </section>
                     <!-- end payment -->
+                    <!-- payment form for online pay -->
+                    <section id="paymentOnlineForm" class="mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fa-solid fa-money-bill"></i>
+                                Pay Online
+                                <input id="onlinePayCheckbox" type="checkbox" name="" >
+                            </div>
+                            <div class="card-body">
+                                <form id="paymentOnlineFormWrap" action="">
+                                    <div class="row">
+                                        <!-- row 1 -->
+                                        <div class="col-md-4 col-6 p-1">
+                                            <div class="form-group">
+                                                <input type="text" placeholder="Student First Name"
+                                                    class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-6 p-1">
+                                            <div class="form-group">
+                                                <input class="form-control" type="text"
+                                                    placeholder="Student Middle Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-6 p-1">
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" placeholder="Student Last Name">
+                                            </div>
+                                        </div>
+                                        <!-- end row 1 -->
+
+                                        <!-- row 2 -->
+                                        <div class="col-md-4 col-6 p-1">
+                                            <div class="form-group">
+                                                <input class="form-control" type="number" placeholder="Student ID"
+                                                    name="ID" id="" min="1000">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-6 p-1">
+                                            <div class="form-group">
+                                                <input class="form-control" type="number" placeholder="Student Grade"
+                                                    name="ID" id="" min="1" max="12">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-6 p-1">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Select Section</option>
+                                                <option value="1">Section A </option>
+                                                <option value="2">Section B </option>
+                                            </select>
+                                        </div>
+                                        <!-- end row 2 -->
+
+                                        <!-- row 3 -->
+                                        <div class="col-md-4 col-6 p-1">
+                                            <div class="form-group">
+                                                <div class="form-group">
+                                                    <input class="form-control" type="text"
+                                                        placeholder="Guardian First Name">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-6 p-1">
+                                            <div class="form-group">
+                                                <div class="form-group">
+                                                    <input class="form-control" type="text"
+                                                        placeholder="Guardian Last Name">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-6 p-1">
+                                            <div class="form-group">
+                                                <input class="form-control" placeholder="Phone Number" type="tel" id=""
+                                                    name="phone" pattern="[0-9]{8}">
+                                            </div>
+                                        </div>
+                                        <!-- end row 3 -->
+
+                                        <!-- row 4 -->
+                                        <div class="col-md-4 col-12 p-1 text-center">
+                                            <label for="" class="fw-bold mb-n5">Card Number:</label>
+                                        </div>
+                                        <div class="col-md-4 col-12 p-1">
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" name="" id=""
+                                                    placeholder="**** **** **** 7865">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-6 p-1">
+                                            <div>
+                                                <input type="radio" id="" name="payment-currency" value="dollar" checked />
+                                                <label for="dollar">dollar</label>
+                                            </div>
+                                            <div>
+                                                <input type="radio" id="dewey" name="payment-currency" value="lebanese" />
+                                                <label for="lebanese">lebanese pound</label>
+                                            </div>
+                                        </div>
+                                        <!-- end row 4 -->
+
+                                        <!-- row 5 -->
+                                        <div class="col-12 p-1">
+                                            <button class="btn btn-primary w-100"> Pay </button>
+                                        </div>
+                                        <!-- end row 5 -->
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end payment form -->
 
                     <!-- classes schedule section -->
                     <section id="classesSchedule" class="student-class-schedule-section">
