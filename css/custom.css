@@ -1,2 +1,21 @@
-.user-profile{  border-radius: 52%;
- }
+.user-profile {
+    border-radius: 52%;
+}
+
+/* for table */
+.custom-tables {
+    width: 100%;
+    text-align: center;
+    max-height: 100vh;
+}
+
+.custom-tables thead {
+    padding: 2px;
+    margin: 12px;
+    width: max-content;
+    background: #e9ecef;
+}
+
+.bg-custom-light-gray {
+    background-color: #bfc7cf85;
+}
