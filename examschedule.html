@@ -13,8 +13,6 @@
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <!-- custom CSS for student.HTML -->
     <link rel="stylesheet" href="css/custom-css/student.css">
-    <!-- link for css -->
-    <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body class="sb-nav-fixed">
@@ -93,7 +91,7 @@
                         <div class="collapse" id="collapseExams" aria-labelledby="headingTwo"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="viewgrades.html">Exam Grades</a>
+                                <a class="nav-link" href="viewexams.html">Exam Grades</a>
                                 <a class="nav-link" href="examschedule.html">Exam Scheduele</a>
                             </nav>
                         </div>
@@ -134,101 +132,53 @@
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid px-4">
-                    <h1 class="mt-4">Add Attendance</h1>
+                    <h1 class="mt-4">Exam Schedule</h1>
                     <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item active">Dashboard / Teacher / Add Attendance</li>
+                        <li class="breadcrumb-item active">Dashboard / Exam Schedule</li>
                     </ol>
-                    <!-- <table class="table">
-                        <thead>
-                            <tr>
-                                <th>1</th>
-                                <th>2</th>
-                                <th>3</th>
-                                <th>4</th>
-                                <th>5</th>
-
-                                <th>Days Missed-col</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <td>Larry the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                        </tbody>
-                    </table> -->
-
-                    <div class="card">
-                        <div class="card-header">
-                            <i class="fa-solid fa-clipboard-user"></i>
-                            Add Attendance
-                            <div class="row">
-                                <div class="col-md-3 col-6 p-1">
-                                    <select class="form-select"  aria-label="Default select example">
-                                        <option selected disabled>Select Class</option>
-                                        <option value="1">5 A</option>
-                                        <option value="2">5 B</option>
-                                        <option value="2">6 B</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-3 col-6 p-1">
+                    <div class="row justify-content-center  mb-4 mt-4">
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <input type="text" placeholder="Exam Title" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-xl-3  ">
                                     
-                                    <input class="form-select " type="date" name="attendance-date"
-                                        placeholder="dd-mm-yyyy" value="" min="2020-01-01" max="2030-12-31">
-                                </div>
-                            </div>
-
+                            <input class="form-select " type="date" name="attendance-date"
+                                placeholder="Exam Date"   min="2020-01-01" max="2030-12-31">
                         </div>
-                        <div class="card-body">
-                            <table class="custom-tables w-100">
-                                <thead>
-                                    <th class="p-1 text-center" colspan="2">Student Name</th>
-                                    <th class="text-end p-1">Present</th>
-                                    <th class="text-start p-1">Absent</th>
-                                </thead>
-                                <tbody>
-                                    <tr class="bg-custom-light-gray">
-                                        <td colspan="2" class="text-center  p-1">Mohammad Nasser</td>
-                                        <td class="text-end p-1"><input type="radio" name="attendace-radio-1" id="">
-                                        </td>
-                                        <td class="text-start p-1"><input style="accent-color: red;" type="radio"
-                                                name="attendace-radio-1" id="">
-                                        </td>
-                                    </tr>
-                                    <tr class="">
-                                        <td colspan="2" class="text-center p-1">Mohammad Jamil</td>
-                                        <td class="text-end p-1"><input type="radio" name="attendace-radio-2" id="">
-                                        </td>
-                                        <td class="text-start p-1"><input style="accent-color: red;" type="radio"
-                                                name="attendace-radio-2" id="">
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-custom-light-gray">
-                                        <td colspan="2" class="text-center p-1">Mohammad Offf</td>
-                                        <td class="text-end p-1"><input type="radio" name="attendace-radio-3" id="">
-                                        </td>
-                                        <td class="text-start p-1"><input style="accent-color: red;" type="radio"
-                                                name="attendace-radio-3" id="">
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                            <div class="w-100 p-1 text-end">
-                                <button class="py-1 my-1 w-25 btn btn-primary" type="submit">Submit</button>
-                            </div>
+                         
+                        <div class="col-xl-3">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Select Class</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
                         </div>
+                        <div class="col-xl-3">
+
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Select Section</option>
+                                <option value="1">Section A </option>
+                                <option value="2">Section B </option>
+                            </select>
+                        </div>
+                        <div class="col-xl-12  mt-4 mb-4"> 
+                            
+                            <div class="form-group">
+                                <textarea type="text" rows="3" placeholder="Other Notes" class="form-control"></textarea>
+                            </div>
+                            
+                        </div>
+              
+                        <div class="col-xl-12  mt-4 mb-4"> 
+                            
+                            <button class="btn btn-primary">Schedule The Exams</button>
+                            
+                        </div>
+              
                     </div>
+                 
                 </div>
 
             </main>
