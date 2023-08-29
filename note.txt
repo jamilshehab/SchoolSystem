@@ -1,3 +1,19 @@
+//-- 
+Admin Dashboard:
+See teacher absente
+See student absente
+late payment
+--//
+
+//-- 
+Admin:
+Add new classroom
+Delete classroom
+Edit classroom
+View all students in a classroom
+View all teachers of the school
+--//
+
 //--
 we can use this table in teacher.html to let teacher set the Attendance
 https://codepen.io/b00stup/pen/jLWPgd 
