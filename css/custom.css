@@ -74,3 +74,10 @@
 .bg-custom-light-gray {
     background-color: #bfc7cf85;
 }
+.form-select,.form-check-input,.startDate{
+    cursor: pointer;
+}
+
+input::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+  }
